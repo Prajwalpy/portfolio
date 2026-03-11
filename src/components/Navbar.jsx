@@ -14,10 +14,21 @@ const Navbar = () => {
 
   const navItems = [
     { name: 'Home', href: '#home' },
-    { name: 'Skills', href: '#skills' },
-    { name: 'Projects', href: '#projects' },
     { name: 'About', href: '#about' },
+    { name: 'Skills', href: '#skills' },
+    { name: 'Approach', href: '#approach' },
+    { name: 'Projects', href: '#projects' },
+    { name: 'Contact', href: '#contact' },
   ];
+
+  const handleNavClick = (e, href) => {
+    e.preventDefault();
+    const target = document.querySelector(href);
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth' });
+    }
+    setIsMobileMenuOpen(false);
+  };
 
   return (
     <nav
@@ -39,6 +50,7 @@ const Navbar = () => {
               <a
                 key={item.name}
                 href={item.href}
+                onClick={(e) => handleNavClick(e, item.href)}
                 className="transition-colors duration-300 font-medium hover:opacity-80"
                 style={{ color: '#F8FAFC' }}
               >
@@ -81,7 +93,7 @@ const Navbar = () => {
               href={item.href}
               className="block px-4 py-2 hover:opacity-80"
               style={{ color: '#F8FAFC' }}
-              onClick={() => setIsMobileMenuOpen(false)}
+              onClick={(e) => handleNavClick(e, item.href)}
             >
               {item.name}
             </a>

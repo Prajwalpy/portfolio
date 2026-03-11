@@ -12,7 +12,7 @@ const About = () => {
       isSvg: true
     },
     { 
-      name: 'Email', 
+      name: 'Gmail', 
       url: 'mailto:prajwalm021299@gmail.com', 
       iconUrl: 'https://cdn-icons-png.flaticon.com/512/732/732200.png',
       isImage: true
@@ -20,37 +20,32 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="min-h-screen py-20" style={{ backgroundColor: '#E5E7EB' }}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4" style={{ color: '#1E293B' }}>
-            About <span style={{ color: '#1E293B' }}>Me</span>
+    <section id="about" className="py-24 bg-slate-50 border-t border-slate-100">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        <div className="text-center max-w-2xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold tracking-tight" style={{ color: '#1E293B' }}>
+            About Me
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="mt-16 grid md:grid-cols-2 gap-8 items-center">
           <div className="space-y-6">
             <p className="text-lg leading-relaxed" style={{ color: '#1E293B' }}>
-              I'm <span className="font-semibold" style={{ color: '#2563EB' }}>Prajwal Mohan</span>, 
-              a Biomedical Engineering graduate student at Arizona State University passionate 
-              about using technology to make healthcare smarter and more human-centered.
+              I am a biomedical engineer specializing in <span className="font-semibold" style={{ color: '#2563EB' }}>wearable medical systems</span>,{' '}
+              <span className="font-semibold" style={{ color: '#2563EB' }}>biosignal processing</span>, and interdisciplinary healthcare technology development.
             </p>
             <p className="text-lg leading-relaxed" style={{ color: '#1E293B' }}>
-              At <span className="font-semibold" style={{ color: '#2563EB' }}>ASU Health</span>, I work alongside 
-              university leaders to shape large-scale health initiatives and research proposals 
-              worth up to $500M, focusing on improving health outcomes and promoting the ethical 
-              use of AI in medicine. My experience blends engineering design, data analysis, and 
-              strategic research, from building EEG device prototypes to conducting exploratory 
-              data studies and developing quality systems.
+              My work focuses on designing <span className="font-semibold" style={{ color: '#2563EB' }}>closed-loop systems</span> that integrate
+              physiological sensing, adaptive algorithms, and real-time feedback
+              to improve human interaction with medical and assistive technologies.
             </p>
             <p className="text-lg leading-relaxed" style={{ color: '#1E293B' }}>
-              I believe innovation happens at the <span className="font-semibold" style={{ color: '#2563EB' }}>intersection 
-              of empathy and engineering</span> where data, design, and purpose meet to create 
-              meaningful change.
+              I have experience spanning <span className="font-semibold" style={{ color: '#2563EB' }}>biomedical R&amp;D</span>, healthcare strategy,
+              and AI governance initiatives within academic and clinical environments.
             </p>
           </div>
 
-          <div className="rounded-2xl p-8 shadow-xl" style={{ backgroundColor: '#F1F5F9' }}>
+          <div id="contact" className="rounded-2xl p-8 shadow-sm hover:shadow-md transition-all duration-300 scroll-mt-24 border border-slate-100" style={{ backgroundColor: '#FFFFFF' }}>
             <h3 className="text-2xl font-bold mb-6 text-center" style={{ color: '#1E293B' }}>Let's Connect</h3>
             <div className="grid grid-cols-2 gap-4">
               {socialLinks.map((link, index) => (
@@ -60,7 +55,7 @@ const About = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center gap-3 p-4 rounded-xl hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300"
-                  style={{ backgroundColor: '#E5E7EB' }}
+                  style={{ backgroundColor: '#F1F5F9' }}
                 >
                   {link.isSvg ? (
                     <svg 
