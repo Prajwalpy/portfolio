@@ -1,124 +1,104 @@
 const Projects = () => {
   const projects = [
     {
-      title: 'Emotion-Aware Tactile Feedback for Deaf Users',
-      image: '/images/tactile-feedback.png',
+      title: 'C.E.R.A. — Clinical Equipment Retrieval Assistant',
+      subtitle: 'Clinical AI System for Biomedical Engineering Workflows',
+      image: '/images/cera.png',
       imagePosition: 'right',
       sections: [
         {
           label: 'Problem',
-          value: 'Deaf users lack access to the emotional content conveyed through sound, limiting their ability to experience affective cues in real-time environments.',
+          value: 'Biomedical and clinical engineers rely on hundreds of pages of manufacturer service manuals to troubleshoot ICU ventilators. Critical information such as error codes, repair procedures, and safety warnings is difficult to locate quickly, increasing equipment downtime and operational risk.',
         },
         {
-          label: 'Engineering Objective',
-          value: 'Design a closed-loop wearable system that captures biosignals, infers emotional state, and delivers corresponding haptic feedback in real time.',
-        },
-        {
-          label: 'My Role',
-          value: 'Led end-to-end system development including EEG signal acquisition, emotion classification pipeline, and haptic actuator integration.',
-        },
-        {
-          label: 'System Architecture',
-          value: 'EEG headset → signal preprocessing via Python/LSL → emotion classifier → haptic driver in Max/MSP → wearable actuator array.',
-        },
-        {
-          label: 'Methods / Core Capabilities',
-          value: 'Band-power feature extraction from EEG channels, multi-class emotion classification, and real-time haptic pattern mapping per emotional state.',
+          label: 'Engineering Approach',
+          value: 'Developed an enterprise-grade Retrieval-Augmented Generation (RAG) system designed as a clinical engineering workflow assistant. Built hybrid semantic + keyword retrieval pipelines to accurately identify error codes and part numbers, implemented structured parsing of ventilator manuals, designed context-aware prompt routing to maintain device-specific troubleshooting accuracy, and converted technical documentation into structured diagnostic workflows and procedural checklists.',
         },
         {
           label: 'Safety & Validation',
-          value: 'Tested with users in controlled sessions; emotion labeling validated against self-reported affective states using structured protocol.',
+          value: 'Implemented risk-management guardrails inspired by FDA and ISO 14971 principles. Automatically extracts and prioritizes WARNING / CAUTION / DANGER safety statements. Prevents cross-device instruction errors through device-aware validation logic. Ensures traceability by citing source manuals during response generation.',
         },
         {
-          label: 'Engineering Impact',
-          value: 'Demonstrated that non-auditory emotional cues can be conveyed through tactile channels with measurable user recognition accuracy.',
-        },
-        {
-          label: 'Skills Demonstrated',
-          value: 'Biosignal processing, wearable systems, human-centered design, real-time data streaming, system integration.',
+          label: 'Impact',
+          value: 'Reduced manual documentation search time for troubleshooting workflows. Enabled automated CMMS-ready maintenance documentation generation. Demonstrated safe application of AI within clinical engineering environments.',
         },
       ],
-      technologies: ['Python', 'EEG', 'Max/MSP', 'Haptic Feedback', 'Librosa', 'LSL'],
+      technologies: ['Python', 'LlamaIndex', 'Google Gemini 1.5 Flash', 'ChromaDB', 'LlamaParse', 'BAAI/bge-small-en-v1.5', 'Streamlit'],
+      engineeringSkills: [
+        'System Architecture Design',
+        'Clinical Workflow Engineering',
+        'Risk Analysis (ISO 14971 Concepts)',
+        'Safety-Critical AI Design',
+        'Information Retrieval System Design',
+        'Human Factors Consideration',
+        'Technical Traceability & Documentation',
+      ],
     },
     {
-      title: 'C.E.R.A. — Clinical Equipment Retrieval Assistant',
-      image: '/images/cera.png',
+      title: 'Emotion-Aware Tactile Feedback System for Deaf Users',
+      subtitle: 'Closed-Loop Wearable Neurotechnology System',
+      image: '/images/tactile-feedback.png',
       imagePosition: 'left',
       sections: [
         {
           label: 'Problem',
-          value: 'Healthcare staff spend significant time locating movable clinical equipment, causing delays in patient care and reducing operational efficiency across hospital units.',
+          value: 'Deaf users experience limited emotional perception during live acoustic events due to lack of sensory translation of sound-based emotional cues.',
         },
         {
-          label: 'Engineering Objective',
-          value: 'Develop an intelligent equipment retrieval assistant that tracks, locates, and routes clinical staff to equipment in real time within hospital environments.',
+          label: 'Engineering Approach',
+          value: 'Designed a closed-loop wearable biofeedback system integrating EEG sensing with adaptive haptic feedback. System architecture included real-time EEG acquisition using Muse headband, signal processing pipelines computing Frontal Alpha Asymmetry and Theta/Beta Ratio, and adaptive vibration control translating emotional states into tactile feedback.',
         },
         {
-          label: 'My Role',
-          value: 'Designed the full system architecture, developed the real-time tracking backend, and built the staff-facing retrieval interface.',
+          label: 'Validation & Experimentation',
+          value: 'Developed experimental evaluation workflows, analyzed physiological and interaction data to assess responsiveness, and iteratively refined feedback mapping based on user engagement metrics.',
         },
         {
-          label: 'System Architecture',
-          value: 'Sensor layer (RFID/BLE tags on equipment) → edge aggregation nodes → centralized location backend → web interface for staff retrieval requests.',
-        },
-        {
-          label: 'Methods / Core Capabilities',
-          value: 'Real-time location triangulation, equipment status monitoring, and natural language query interface for equipment retrieval requests.',
-        },
-        {
-          label: 'Safety & Validation',
-          value: 'Validated against known equipment positions in a simulated ward layout; benchmarked false-positive retrieval rate and system response latency.',
-        },
-        {
-          label: 'Engineering Impact',
-          value: 'Reduced simulated equipment search time by over 60%; architecture designed for scalability across multi-floor hospital units.',
-        },
-        {
-          label: 'Skills Demonstrated',
-          value: 'Systems engineering, IoT integration, backend development, clinical workflow design, human-centered interface design.',
+          label: 'Impact',
+          value: 'Demonstrated feasibility of emotion-aware assistive neurotechnology. Advanced human-centered wearable system design for accessibility applications.',
         },
       ],
-      technologies: ['Python', 'RFID/BLE', 'Flask', 'React', 'PostgreSQL'],
+      technologies: ['Python', 'EEG (Muse)', 'Max/MSP', 'Haptic Hardware', 'LSL', 'Biosignal Analysis'],
+      engineeringSkills: [
+        'Closed-Loop Control System Design',
+        'Biosignal Processing & Feature Engineering',
+        'Experimental Design & Validation',
+        'Human-Centered Engineering',
+        'Real-Time System Integration',
+        'Physiological Data Interpretation',
+      ],
     },
     {
-      title: 'CAPTAVATE — EEG-Based Focus Aid Wearable',
+      title: 'CAPTAVATE — Wearable EEG Device Prototype',
+      subtitle: 'Design Verification & Validation Project',
       image: '/images/eeg.png',
       imagePosition: 'right',
       sections: [
         {
-          label: 'Problem',
-          value: 'Attention and focus disorders often lack real-time, objective feedback mechanisms that help users regulate cognitive engagement. Existing solutions provide delayed or subjective assessments rather than continuous physiological monitoring.',
+          label: 'Objective',
+          value: 'Develop and validate an EEG-based wearable system capable of detecting attention states for neurofeedback applications.',
         },
         {
-          label: 'Engineering Objective',
-          value: 'Develop and validate an EEG-based wearable prototype capable of detecting attention states and delivering real-time neurofeedback based on brain activity.',
+          label: 'Engineering Work',
+          value: 'Executed design verification testing on attention-detection algorithms, correlated predicted vs observed outputs to validate system accuracy, built validation datasets and performed statistical analysis in MATLAB, and supported prototype development lifecycle activities.',
         },
         {
-          label: 'My Role',
-          value: 'Performed design verification testing for attention-detection algorithms, evaluated algorithm accuracy using MATLAB signal analysis workflows, correlated predicted attention states against recorded EEG signals, and produced technical documentation supporting the device development lifecycle.',
+          label: 'Quality & Documentation',
+          value: 'Authored validation reports following Good Documentation Practices (GDP) and created structured technical documentation supporting traceability.',
         },
         {
-          label: 'Methods & Engineering Work',
-          value: 'EEG signal acquisition and preprocessing, attention-state prediction modeling, statistical comparison of actual vs. predicted outputs, and real-time neurofeedback validation testing.',
-        },
-        {
-          label: 'Verification & Validation (V&V)',
-          value: 'Conducted algorithm verification tests to assess prediction accuracy, quantified correlation between measured EEG signals and model outputs, and supported verification activities aligned with medical device development practices.',
-        },
-        {
-          label: 'Documentation & Compliance',
-          value: 'Authored validation reports following Good Documentation Practices (GDP), maintained traceable engineering records supporting development phases, and contributed to structured device lifecycle documentation.',
-        },
-        {
-          label: 'Engineering Impact',
-          value: 'Demonstrated feasibility of real-time attention detection using wearable EEG, supporting development of adaptive neurofeedback assistive technologies.',
-        },
-        {
-          label: 'Skills Demonstrated',
-          value: 'Medical Device Verification · Biosignal Analysis · Algorithm Validation · Technical Documentation · Neurotechnology',
+          label: 'Engineering Outcome',
+          value: 'Verified algorithm performance for real-time neurofeedback use. Demonstrated understanding of medical device V&V workflows.',
         },
       ],
-      technologies: ['MATLAB', 'EEG Signal Processing', 'Algorithm Verification', 'Neurofeedback Systems'],
+      technologies: ['MATLAB', 'EEG Signal Processing', 'Algorithm V&V', 'Neurofeedback Systems', 'GDP Documentation'],
+      engineeringSkills: [
+        'Design Verification & Validation (V&V)',
+        'Test Protocol Development',
+        'Statistical Performance Evaluation',
+        'Algorithm Validation Methodology',
+        'Medical Device Documentation (GDP)',
+        'Requirements Verification',
+      ],
     },
   ];
 
@@ -131,14 +111,32 @@ const Projects = () => {
 
   const ProjectText = ({ project }) => (
     <div className="text-left">
-      <h3 className="text-2xl md:text-3xl font-bold mb-6" style={{ color: '#1E293B' }}>
+      <h3 className="text-2xl md:text-3xl font-bold mb-1" style={{ color: '#1E293B' }}>
         {project.title}
       </h3>
+      {project.subtitle && (
+        <p className="text-sm font-medium mb-6" style={{ color: '#2563EB' }}>
+          {project.subtitle}
+        </p>
+      )}
       <div className="mb-6">
         {project.sections.map((s, i) => (
           <CaseStudy key={i} label={s.label} value={s.value} />
         ))}
       </div>
+      {project.engineeringSkills && (
+        <div className="mb-6">
+          <span className="font-bold text-sm" style={{ color: '#1E293B' }}>Engineering Skills Applied:</span>
+          <ul className="mt-2 space-y-1">
+            {project.engineeringSkills.map((skill, i) => (
+              <li key={i} className="flex items-start gap-2 text-sm" style={{ color: '#475569' }}>
+                <span className="mt-1.5 flex-shrink-0 w-1.5 h-1.5 rounded-full" style={{ backgroundColor: '#2563EB' }} />
+                {skill}
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
       <div>
         <span className="font-bold text-sm" style={{ color: '#1E293B' }}>Technical Stack: </span>
         <div className="flex flex-wrap gap-2 mt-2">
