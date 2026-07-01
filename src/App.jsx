@@ -1,12 +1,12 @@
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
-import Skills from './components/Skills'
-import Projects from './components/Projects'
 import About from './components/About'
+import Experience from './components/Experience'
+import Skills from './components/Skills'
+import Certifications from './components/Certifications'
+import Projects from './components/Projects'
+import Education from './components/Education'
 import Footer from './components/Footer'
-import EngineeringApproach from './components/EngineeringApproach';
-
-
 
 function App() {
   return (
@@ -14,13 +14,14 @@ function App() {
       <Navbar />
       <Hero />
       <About />
+      <Experience />
       <Skills />
-      <EngineeringApproach />
+      <Certifications />
       <Projects />
+      <Education />
       <Footer />
     </div>
   )
 }
 
 export default App
-

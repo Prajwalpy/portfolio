@@ -2,7 +2,7 @@ const About = () => {
   const socialLinks = [
     { 
       name: 'LinkedIn', 
-      url: 'https://linkedin.com/in/prajwal-m-52438b1a5', 
+      url: 'https://www.linkedin.com/in/prajwalm-bme/',
       iconUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg',
       isImage: true
     },
@@ -31,17 +31,18 @@ const About = () => {
         <div className="mt-16 grid md:grid-cols-2 gap-8 items-center">
           <div className="space-y-6">
             <p className="text-lg leading-relaxed" style={{ color: '#1E293B' }}>
-              I am a biomedical engineer specializing in <span className="font-semibold" style={{ color: '#2563EB' }}>wearable medical systems</span>,{' '}
-              <span className="font-semibold" style={{ color: '#2563EB' }}>biosignal processing</span>, and interdisciplinary healthcare technology development.
+              I am a Quality and Validation Engineer with a foundation in{' '}
+              <span className="font-semibold" style={{ color: '#2563EB' }}>biomedical engineering</span>,{' '}
+              <span className="font-semibold" style={{ color: '#2563EB' }}>regulatory compliance</span>, and quality management systems for medical devices.
             </p>
             <p className="text-lg leading-relaxed" style={{ color: '#1E293B' }}>
-              My work focuses on designing <span className="font-semibold" style={{ color: '#2563EB' }}>closed-loop systems</span> that integrate
-              physiological sensing, adaptive algorithms, and real-time feedback
-              to improve human interaction with medical and assistive technologies.
+              My work spans{' '}
+              <span className="font-semibold" style={{ color: '#2563EB' }}>Design History File authoring</span>,{' '}
+              <span className="font-semibold" style={{ color: '#2563EB' }}>risk management per ISO 14971</span>, nonconformance and change control, and V&V execution applied hands-on across a full device development lifecycle.
             </p>
             <p className="text-lg leading-relaxed" style={{ color: '#1E293B' }}>
-              I have experience spanning <span className="font-semibold" style={{ color: '#2563EB' }}>biomedical R&amp;D</span>, healthcare strategy,
-              and AI governance initiatives within academic and clinical environments.
+              I also independently built{' '}
+              <span className="font-semibold" style={{ color: '#2563EB' }}>TraceFlow AI</span>, a full-stack eQMS platform implementing ISO 13485, ISO 14971, IEC 62304, and 21 CFR Parts 820/803/11 demonstrating end-to-end understanding of regulatory requirements as enforced system logic.
             </p>
           </div>
 

@@ -1,10 +1,44 @@
 const Projects = () => {
   const projects = [
     {
+      title: 'TraceFlow AI — AI-Enabled eQMS Platform',
+      subtitle: 'Full-Stack Quality Management System | ISO 13485 · ISO 14971 · IEC 62304 · 21 CFR Parts 820/803/11',
+      image: '/images/traceflow.png',
+      imagePosition: 'right',
+      sections: [
+        {
+          label: 'Problem',
+          value: 'Medical device quality management requires regulation-aligned documentation across design controls, risk management, traceability, CAPA, and post-market surveillance — but most teams lack integrated tooling that enforces these requirements at the system level rather than treating them as paperwork.',
+        },
+        {
+          label: 'Engineering Approach',
+          value: 'Designed and built a full-stack eQMS from scratch as a solo project. Implemented five modules: Design Input & Risk Engine, Traceability Matrix / RTM Gap Analysis, CAPA Workflow, Post-Market Surveillance & Complaints, and Audit Trail with Electronic Signatures. Rewrote all backend API routes, Prisma schema, validation schemas, and frontend pages to enforce regulatory requirements as system logic — not optional fields.',
+        },
+        {
+          label: 'Regulatory Alignment',
+          value: 'Mapped every module to ISO 13485:2016, ISO 14971:2019, IEC 62304, 21 CFR Part 820, 21 CFR Part 803, and 21 CFR Part 11. Completed a full regulatory overhaul ensuring design controls, electronic records, and audit trail functionality meet FDA and international standards.',
+        },
+        {
+          label: 'Impact',
+          value: 'Demonstrates end-to-end understanding of QMS architecture and regulatory requirements — implemented as enforced system behavior, not documentation checklists. Serves as a live portfolio artifact for Quality Engineer and Software Quality Engineer roles in the medical device industry.',
+        },
+      ],
+      technologies: ['Next.js 14', 'TypeScript', 'PostgreSQL', 'Prisma', 'Google Gemini AI', 'Tailwind CSS', 'ISO 13485', 'ISO 14971', '21 CFR Part 820'],
+      engineeringSkills: [
+        'Quality Management System (QMS) Design',
+        'Regulatory Compliance Architecture',
+        'Design Controls Implementation',
+        'Risk Management (ISO 14971)',
+        'CAPA Workflow Development',
+        'Electronic Records & Audit Trail (21 CFR Part 11)',
+        'Full-Stack Medical Device Software',
+      ],
+    },
+    {
       title: 'C.E.R.A. — Clinical Equipment Retrieval Assistant',
       subtitle: 'Clinical AI System for Biomedical Engineering Workflows',
       image: '/images/cera.png',
-      imagePosition: 'right',
+      imagePosition: 'left',
       sections: [
         {
           label: 'Problem',
@@ -38,7 +72,7 @@ const Projects = () => {
       title: 'Emotion-Aware Tactile Feedback System for Deaf Users',
       subtitle: 'Closed-Loop Wearable Neurotechnology System',
       image: '/images/tactile-feedback.png',
-      imagePosition: 'left',
+      imagePosition: 'right',
       sections: [
         {
           label: 'Problem',
@@ -71,7 +105,7 @@ const Projects = () => {
       title: 'CAPTAVATE — Wearable EEG Device Prototype',
       subtitle: 'Design Verification & Validation Project',
       image: '/images/eeg.png',
-      imagePosition: 'right',
+      imagePosition: 'left',
       sections: [
         {
           label: 'Objective',
@@ -178,7 +212,7 @@ const Projects = () => {
             Projects
           </h2>
           <p className="mt-4 text-lg leading-relaxed" style={{ color: '#475569' }}>
-            Engineering case studies across biomedical systems, wearable devices, and clinical technology.
+            Engineering case studies across quality management systems, biomedical devices, and clinical technology.
           </p>
         </div>
 

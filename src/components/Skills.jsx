@@ -1,48 +1,56 @@
 const Skills = () => {
   const groups = [
     {
-      title: 'Core Engineering Capabilities',
-      description: 'Foundational biomedical engineering competencies applied across research, prototyping, and clinical technology development.',
+      title: 'Regulatory & Quality Systems',
+      description: 'Standards and frameworks applied across device development, quality documentation, and compliance.',
       fullWidth: true,
       items: [
-        'Biosignal Processing (EEG)',
-        'Neurotechnology Systems',
-        'Wearable Medical Devices',
-        'Human-Centered Design',
-        'Closed-Loop System Design',
-        'Physiological Signal Acquisition',
-        'Medical Device Verification & Validation',
-        'Algorithm Development',
+        'ISO 13485:2016',
+        'ISO 14971:2019 — Risk Management',
+        'IEC 62304 — Software Lifecycle',
+        '21 CFR Part 820 — Quality System Regulation',
+        '21 CFR Part 11 — Electronic Records',
+        '21 CFR Part 803 — MDR',
+        'Design History File (DHF)',
+        'CAPA Management',
+        'NCR / DCR — Nonconformance & Design Change',
+        'FMEA',
+        'Root Cause Analysis',
+        'Design Controls',
+        'Change Control',
+        'Good Documentation Practices (GDP)',
+        'Audit Readiness',
       ],
     },
     {
-      title: 'Technical Stack',
-      description: 'Software tools and frameworks used in biomedical engineering systems and real-time data workflows.',
+      title: 'Verification & Validation',
+      description: 'End-to-end V&V execution from test planning through formal closure.',
+      fullWidth: false,
+      items: [
+        'V&V Planning (VVP)',
+        'Test Protocol Development (FTP / FTR)',
+        'Requirements Traceability (RTM)',
+        'Functional Verification Testing',
+        'IQ / OQ / PQ Concepts',
+        'Statistical Analysis',
+        'MATLAB',
+        'Minitab',
+        'IRB-Approved Human-Subject Studies',
+      ],
+    },
+    {
+      title: 'Engineering & Technical Stack',
+      description: 'Tools and platforms used across QMS development, biomedical systems, and data workflows.',
       fullWidth: false,
       items: [
         'Python',
-        'MATLAB',
-        'Signal Processing',
+        'Next.js / TypeScript / PostgreSQL',
+        'Prisma ORM',
+        'Google Gemini AI',
+        'EEG / Biosignal Processing',
+        'Wearable Medical Devices',
         'Real-Time Data Streaming (LSL)',
-        'System Integration',
-        'Max/MSP',
-        'Muse EEG',
-        'LSL Bridge',
         'Git & GitHub',
-      ],
-    },
-    {
-      title: 'Engineering Methods',
-      description: 'Structured engineering practices applied throughout the design, testing, and documentation lifecycle.',
-      fullWidth: false,
-      items: [
-        'Experimental Design',
-        'Prototype Development',
-        'Data Analysis',
-        'Technical Documentation',
-        'Good Documentation Practices (GDP)',
-        'Design Verification Testing',
-        'Statistical Analysis',
       ],
     },
   ];
@@ -64,15 +72,13 @@ const Skills = () => {
             Skills
           </h2>
           <p className="mt-4 text-lg leading-relaxed" style={{ color: '#475569' }}>
-            Experience across biosignal systems, real-time physiological data pipelines, and wearable medical device prototyping.
+            Regulatory compliance, quality systems, and V&V execution across medical device development and QMS engineering.
           </p>
         </div>
 
         <div className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Full-width top card */}
-          <div
-            className="lg:col-span-2 p-8 rounded-2xl border border-slate-100 bg-white shadow-sm hover:shadow-md transition-all duration-300"
-          >
+          <div className="lg:col-span-2 p-8 rounded-2xl border border-slate-100 bg-white shadow-sm hover:shadow-md transition-all duration-300">
             <h3 className="text-lg font-semibold mb-1 text-slate-800">
               {groups[0].title}
             </h3>

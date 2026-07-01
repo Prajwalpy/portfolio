@@ -15,8 +15,9 @@ const Navbar = () => {
   const navItems = [
     { name: 'Home', href: '#home' },
     { name: 'About', href: '#about' },
+    { name: 'Experience', href: '#experience' },
     { name: 'Skills', href: '#skills' },
-    { name: 'Approach', href: '#approach' },
+    { name: 'Certifications', href: '#certifications' },
     { name: 'Projects', href: '#projects' },
     { name: 'Contact', href: '#contact' },
   ];
@@ -44,14 +45,13 @@ const Navbar = () => {
             Portfolio
           </a>
 
-          {/* Desktop Menu */}
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex space-x-6">
             {navItems.map((item) => (
               <a
                 key={item.name}
                 href={item.href}
                 onClick={(e) => handleNavClick(e, item.href)}
-                className="transition-colors duration-300 font-medium hover:opacity-80"
+                className="transition-colors duration-300 font-medium hover:opacity-80 text-sm"
                 style={{ color: '#F8FAFC' }}
               >
                 {item.name}
@@ -59,7 +59,6 @@ const Navbar = () => {
             ))}
           </div>
 
-          {/* Mobile Menu Button */}
           <button
             className="md:hidden"
             style={{ color: '#F8FAFC' }}
@@ -84,7 +83,6 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Menu */}
       {isMobileMenuOpen && (
         <div className="md:hidden border-t" style={{ backgroundColor: '#1E3A8A', borderColor: '#0F172A' }}>
           {navItems.map((item) => (
